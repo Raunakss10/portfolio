@@ -3,101 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume | Raunak</title>
+  <title>Raunak: Personal site and portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
-    <a href="../">Home</a>
-    <a href="../projects/">Projects</a>
-    <a href="../resume/" aria-current="page">Resume</a>
-    <a href="../contact/">Contact</a>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
     <a href="https://github.com/Raunakss10" target="_blank">GitHub</a>
   </nav>
   <main>
-    <h1>Resume</h1>
-
-    <section>
-      <h2>Education</h2>
-      <article>
-        <header>
-          <h3>University of California, San Diego</h3>
-          <p>Expected graduation: <time datetime="2028-05">May 2028</time></p>
-        </header>
-        <p>B.S. Data Science; Minors in Finance and Applied Mathematics. GPA 3.81/4.00</p>
-        <p>Coursework: Probability &amp; Statistics, Financial Investments, Econometrics, Calculus I–III, Financial Mathematics, Stochastic Processes, Stochastic Calculus</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <article>
-        <header>
-          <h3>AI Researcher, MOSAIC Lab, UCSD</h3>
-          <p><time datetime="2026-01">Jan 2026</time> – Present</p>
-        </header>
-        <ul>
-          <li>Built predictive models (SVM, Logistic Regression, XGBoost) on 60K+ samples, AUC ~0.80</li>
-          <li>Engineered 131+ features and built Python data pipelines</li>
-        </ul>
-      </article>
-      <article>
-        <header>
-          <h3>Investment Analyst, Student Foundation Investment Committee (SFIC), UCSD</h3>
-          <p><time datetime="2025-04">Apr 2025</time> – Present</p>
-        </header>
-        <ul>
-          <li>Supported research for a live equity portfolio as AUM grew 38% from $1.3M to $1.8M</li>
-          <li>Built DCF, comps, and 3-statement models across 10+ proposed investments</li>
-          <li>Prepared 15+ investment memos for a 12-member committee</li>
-        </ul>
-      </article>
-      <article>
-        <header>
-          <h3>Sales Associate, Banjaras Inc., Houston, TX</h3>
-          <p><time datetime="2025-07">Jul 2025</time> – <time datetime="2025-09">Sep 2025</time></p>
-        </header>
-        <ul>
-          <li>Managed 50+ wholesale/retail clients and $50K+ in revenue</li>
-          <li>Drove a 10% sales increase by finding underpriced SKUs and repositioning offers</li>
-        </ul>
-      </article>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <article>
-        <h3>GridAlpha: ERCOT Power Trading Engine</h3>
-        <p>Python engine analyzing 15-minute real-time power price dislocations across Texas hubs; backtested hub-spread signals with XGBoost.</p>
-      </article>
-      <article>
-        <h3>Crude Oil Calendar Spread Strategy</h3>
-        <p>Event-driven WTI spread trades on EIA inventory shocks, 2015–2023; 1.2 Sharpe, ~58% win rate.</p>
-      </article>
-      <article>
-        <h3>MBS Prepayment &amp; Negative Convexity Model</h3>
-        <p>Cashflow simulation for a $100MM mortgage pool, priced across ±50–200bp rate shocks.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Python (pandas, NumPy, scikit-learn, XGBoost, Statsmodels), SQL, R, MATLAB, Java</li>
-        <li>Bloomberg Terminal, Refinitiv, Excel, Git, Jupyter</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Interests</h2>
-      <ul>
-        <li>Captain, UCSD Cricket Team</li>
-        <li>Poker</li>
-      </ul>
-    </section>
+    <header class="hero">
+      <h1>Raunak</h1>
+      <svg class="spark" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true">
+        <polyline points="0,48.0 10,47.4 20,51.5 30,49.6 40,48.3 50,48.1 60,42.6 70,41.3 80,41.6 90,44.0 100,37.3 110,33.4 120,26.7 130,29.3 140,30.4 150,23.0 160,27.9 170,32.6 180,33.2 190,33.3 200,27.4 210,19.7 220,18.7 230,11.5 240,6.1 250,6.0 260,6.0 270,6.0 280,6.0 290,9.1 300,7.9 310,8.3 320,6.9 330,7.6 340,6.0 350,6.0 360,11.1 370,16.1 380,19.1 390,20.4 400,16.6" pathLength="1" />
+      </svg>
+      <p class="tagline">Data Science at UC San Diego. Markets, quant research, and building things with data.</p>
+    </header>
+    <div class="intro">
+      <img src="me.jpg" alt="Raunak in a suit on the beach by Scripps Pier">
+      <p>I'm studying Data Science with minors in Finance and Applied Math. I'm an AI researcher at UCSD's MOSAIC Lab and an investment analyst on the Student Foundation Investment Committee. Outside class I build trading research projects, from ERCOT power spreads to crude oil inventory events, and I captain the UCSD cricket team.</p>
+    </div>
   </main>
 </body>
 </html>
